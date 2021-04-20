@@ -26,7 +26,7 @@ import axios from 'axios';
 
 export default {
   name: "board-list",
-  components: {
+  components: { 
     ChildTreeView,
     ChildDataGrid // Component를 등록한다.
   },

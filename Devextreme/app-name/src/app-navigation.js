@@ -2,7 +2,8 @@ export default [
   {
     text: "Home",
     path: "/home",
-    icon: "home"
+    icon: "home",
+    
   },
   {
     text: "Examples",
@@ -15,6 +16,9 @@ export default [
       {
         text: "Tasks",
         path: "/tasks"
+      }, {
+        text: "Vuex",
+        path: "/vuex"
       }
     ]
   },

@@ -51,7 +51,15 @@ const router = new Router({
         content: treeGrid
       }
     },
-    
+    {
+      path: "/vuex",
+      name: "vuex",
+      meta: { requiresAuth: true },
+      components: {
+        layout: defaultLayout,
+        content: treeGrid
+      }
+    },
     {
       path: "/login-form",
       name: "login-form",
