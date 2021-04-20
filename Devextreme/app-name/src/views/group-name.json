@@ -1,0 +1,21 @@
+[
+    {
+      "id": "marketing",
+      "text": "Marketing",
+      "expanded": true,
+      "items": [
+        { "id": "marketing1", "text": "Team1" },
+        { "id": "marketing2", "text": "Team2" }
+      ]
+    },
+    {
+      "id": "sales",
+      "text": "Sales",
+      "expanded": true,
+      "items": [
+        { "id": "sales1", "text": "Team1" },
+        { "id": "sales2", "text": "Team2" }
+      ]
+    }
+  ]
+  

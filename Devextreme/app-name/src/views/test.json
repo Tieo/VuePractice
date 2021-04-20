@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "text": "Marketing",
+      "expanded": true,
+      "items": [
+        { "id": 1.1, "text": "Super Mart of the West" },
+        { "id": 1.2, "text": "Electronics Depot" }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Sales",
+      "expanded": true,
+      "items": [
+        { "id": 2.1, "text": "K&S Music" },
+        { "id": 2.2, "text": "Tom's Club" }
+      ]
+    }
+  ]
+  
