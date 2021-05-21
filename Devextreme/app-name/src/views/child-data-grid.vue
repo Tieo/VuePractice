@@ -4,6 +4,7 @@
     <DxDataGrid
     :data-source="showData"
     :show-borders="true"
+    :repaint-changes-only="true"
     >
     <DxEditing
         :refresh-mode="refreshMode"
@@ -41,7 +42,7 @@
       <div class="option">
         <span>Refresh Mode: </span>
         <DxSelectBox
-          
+          v-model="refreshMode"
           :items="refreshModes"
         />
       </div>
@@ -77,9 +78,11 @@ import {
 }  from 'devextreme-vue/data-grid';
 import { DxButton } from 'devextreme-vue/button';
 import { DxSelectBox } from 'devextreme-vue/select-box';
+import { formatDate } from 'devextreme/localization';
 
 import CustomStore from 'devextreme/data/custom_store';
-import { formatDate } from 'devextreme/localization';
+
+const URL = 'http://localhost:3000/'
 
 export default {
    components: {
@@ -96,21 +99,21 @@ export default {
   
   data() {
     return {
-      //requestInfo,
-      ordersData: new CustomStore({
-        key: 'OrderID',
-        load: () => this.sendRequest(`${URL}/Orders`),
-        insert: (values) => this.sendRequest(`${URL}/InsertOrder`, 'POST', {
+      groupData: new CustomStore({
+        key: 'ID',
+        load: () => this.sendRequest(`${URL}`),
+        insert: (values) => this.sendRequest(`${URL}`, 'POST', {
           values: JSON.stringify(values)
         }),
-        update: (key, values) => this.sendRequest(`${URL}/UpdateOrder`, 'PUT', {
+        update: (key, values) => this.sendRequest(`${URL}`, 'PUT', {
           key: key,
           values: JSON.stringify(values)
         }),
-        remove: (key) => this.sendRequest(`${URL}/DeleteOrder`, 'DELETE', {
+        remove: (key) => this.sendRequest(`${URL}`, 'DELETE', {
           key: key
         })
       }),
+ 
       requests: [],
       refreshMode: 'reshape',
       refreshModes: ['full', 'reshape', 'repaint']
@@ -156,14 +159,16 @@ export default {
     },
     logRequest(method, url, data) {
       var args = Object.keys(data || {}).map(function(key) {
+        
         return `${key }=${ data[key]}`;
       }).join(' ');
-
+      
       var time = formatDate(new Date(), 'HH:mm:ss');
 
       this.requests.unshift([time, method, url.slice(URL.length), args].join(' '));
     },
     clearRequests() {
+      console.log('');
       this.requests = [];
     }
   },
@@ -213,5 +218,66 @@ export default {
 #form {
   margin-top: 25px;
 }
+.options {
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(191, 191, 191, 0.15);
+}
 
+.caption {
+    margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+.option {
+    margin-bottom: 10px;
+}
+
+.option > span {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+
+.option > .dx-widget {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#requests .caption {
+    float: left;
+    padding-top: 7px;
+}
+
+#requests > div {
+    padding-bottom: 5px;
+}
+
+#requests > div:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#requests #clear {
+    float: right;
+}
+
+#requests ul {
+    list-style: none;
+    max-height: 100px;
+    overflow: auto;
+    margin: 0;
+}
+
+#requests ul li {
+    padding: 7px 0;
+    border-bottom: 1px solid #dddddd;
+}
+
+#requests ul li:last-child {
+    border-bottom: none;
+}
 </style>
+

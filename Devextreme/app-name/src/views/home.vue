@@ -5,13 +5,18 @@
         <b-card style="max-width: 300px;">
           <b-col style="background-color:#ffc20e; height: 100%;" >
             <child-tree-view 
-            @groupName="groupNumber"
-            ></child-tree-view>
+            @groupName="getGroup"
+            />
           </b-col>
         </b-card>
         <b-card>
           <b-col style="background-color:#808285; height: 100%;">
-            <child-data-grid :showData="formData"></child-data-grid>
+            <child-data-grid 
+            
+            @addGroup="postGroup"
+            @updateGroup="putGroup"
+            @deleteGroup="deleteGroup"
+            :showData="formData"/> 
           </b-col>
         </b-card>
       </b-card-group>
@@ -36,9 +41,30 @@ export default {
     };
   },
     methods: {
-      groupNumber: function(e) {
+      getGroup: function(e) {
      axios.get('http://localhost:3000/'+e)
       .then(response => {this.formData = response.data})   
+      },
+      postGroup: function(e) {
+     axios.post('http://localhost:3000/'+e)
+      .then(response => {
+        this.formData = response.data;
+        this.getGroup();
+        })   
+      },
+      putGroup: function(e) {
+     axios.put('http://localhost:3000/'+e)
+       .then(response => {
+        this.formData = response.data;
+        this.getGroup();
+        })   
+      },
+      deleteGroup: function(e) {
+     axios.delete('http://localhost:3000/'+e)
+       .then(response => {
+        this.formData = response.data;
+        this.getGroup();
+        })    
       }
   },
 }

@@ -1,134 +1,56 @@
 {
   "marketing": [
     {
-      "id": 1,
-      "firstName": "Jason",
-      "lastName": "Arnold",
-      "location": "NYC",
-      "email": "jason@test.com"
+      "CompanyName": "qweq",
+      "Address": "wqeq",
+      "City": "weqw",
+      "State": "eqwe",
+      "Zipcode": 1231,
+      "Phone": "12341",
+      "Fax": "123412",
+      "Website": "qwerqwe",
+      "id": 1
     },
     {
-      "id": 2,
-      "firstName": "Taeho",
-      "lastName": "Kim",
-      "location": "Seoul",
-      "email": "thkim@test.com"
+      "id": 3,
+      "CompanyName": "333333333",
+      "Address": "3333",
+      "City": "33333333",
+      "State": "3333333",
+      "Zipcode": 33333,
+      "Phone": "333333",
+      "Fax": "3333333",
+      "Website": "3333"
     },
     {
-      "lastName": "Who is number 3?",
-      "firstName": "12341234",
-      "location": "Yong-in",
-      "email": "email.has@changed.com",
-      "id": 3
-    },
-    {
-      "firstName": "Adidas",
-      "lastName": "Nike",
-      "location": "NYC",
-      "email": "jason@test.com",
-      "id": 4
-    },
-    {
-      "lastName": "oooowowowowowowowowowowow",
-      "id": 5,
-      "firstName": "12341234",
-      "location": "Yong-in",
-      "email": "email.123123@test.com"
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 7
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 8
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 9
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 10
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 11
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 12
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 13
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 14
-    },
-    {
-      "lastName": "POST",
-      "firstName": "TEST",
-      "location": "Yong-in",
-      "email": "email.123123@test.com",
-      "id": 15
+      "City": "wer",
+      "State": "wer",
+      "Phone": "werw",
+      "Fax": "erwe",
+      "Website": "rwer",
+      "id": 7,
+      "CompanyName": "7777",
+      "Address": "7777",
+      "Zipcode": 7777
     }
   ],
   "sales": [
     {
-      "Sales Team": "Please select Team."
+      "id": 1,
+      "CompanyName": "Sales Team"
     }
   ],
   "marketing1": [
     {
-      "ID": 1,
-      "CompanyName": "Super Mart of the West",
-      "Address": "702 SW 8th Street",
-      "City": "Bentonville",
-      "State": "Arkansas",
-      "Zipcode": 72716,
-      "Phone": "(800) 555-2797",
-      "Fax": "(800) 555-2171",
-      "Website": "http://www.nowebsitesupermart.com"
+      "CompanyName": "Supqweqweqwer Mart of the West",
+      "id": 1
     },
     {
-      "ID": 2,
-      "CompanyName": "Electronics Depot",
-      "Address": "2455 Paces Ferry Road NW",
-      "City": "Atlanta",
-      "State": "Georgia",
-      "Zipcode": 30339,
-      "Phone": "(800) 595-3232",
-      "Fax": "(800) 595-3231",
-      "Website": "http://www.nowebsitedepot.com"
+      "CompanyName": "12313Electronics Depot",
+      "id": 2
     },
     {
-      "ID": 3,
+      "id": 3,
       "CompanyName": "K&S Music",
       "Address": "1000 Nicllet Mall",
       "City": "Minneapolis",
@@ -150,7 +72,7 @@
       "Website": "http://www.nowebsitesupermart.com"
     },
     {
-      "ID": 5,
+      "id": 5,
       "CompanyName": "Super Mart of the West",
       "Address": "702 SW 8th Street",
       "City": "Bentonville",
@@ -158,13 +80,12 @@
       "Zipcode": 72716,
       "Phone": "(800) 555-2797",
       "Fax": "(800) 555-2171",
-      "Website": "http://www.nowebsitesupermart.com",
-      "id": 5
+      "Website": "http://www.nowebsitesupermart.com"
     }
   ],
   "marketing2": [
     {
-      "ID": 4,
+      "id": 4,
       "CompanyName": "Tom's Club",
       "Address": "999 Lake Drive",
       "City": "Issaquah",
@@ -175,7 +96,7 @@
       "Website": "http://www.nowebsitetomsclub.com"
     },
     {
-      "ID": 5,
+      "id": 5,
       "CompanyName": "E-Mart",
       "Address": "3333 Beverly Rd",
       "City": "Hoffman Estates",
@@ -186,7 +107,7 @@
       "Website": "http://www.nowebsiteemart.com"
     },
     {
-      "ID": 6,
+      "id": 6,
       "CompanyName": "Walters",
       "Address": "200 Wilmot Rd",
       "City": "Deerfield",
@@ -199,7 +120,7 @@
   ],
   "sales1": [
     {
-      "ID": 7,
+      "id": 7,
       "CompanyName": "StereoShack",
       "Address": "400 Commerce S",
       "City": "Fort Worth",
@@ -210,7 +131,7 @@
       "Website": "http://www.nowebsiteshack.com"
     },
     {
-      "ID": 8,
+      "id": 8,
       "CompanyName": "Circuit Town",
       "Address": "2200 Kensington Court",
       "City": "Oak Brook",
@@ -221,7 +142,7 @@
       "Website": "http://www.nowebsitecircuittown.com"
     },
     {
-      "ID": 9,
+      "id": 9,
       "CompanyName": "Premier Buy",
       "Address": "7601 Penn Avenue South",
       "City": "Richfield",
@@ -234,7 +155,7 @@
   ],
   "sales2": [
     {
-      "ID": 10,
+      "id": 10,
       "CompanyName": "ElectrixMax",
       "Address": "263 Shuman Blvd",
       "City": "Naperville",
@@ -245,7 +166,7 @@
       "Website": "http://www.nowebsiteelectrixmax.com"
     },
     {
-      "ID": 11,
+      "id": 11,
       "CompanyName": "Video Emporium",
       "Address": "1201 Elm Street",
       "City": "Dallas",
@@ -256,7 +177,7 @@
       "Website": "http://www.nowebsitevideoemporium.com"
     },
     {
-      "ID": 12,
+      "id": 12,
       "CompanyName": "Screen Shop",
       "Address": "1000 Lowes Blvd",
       "City": "Mooresville",
